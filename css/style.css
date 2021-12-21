@@ -238,6 +238,7 @@ i {
 .header {
   position: relative;
   z-index: 5;
+  transition: all .3s;
 }
 .header__logo {
   width: 103px;
@@ -267,6 +268,15 @@ i {
 }
 .header__burger-block {
   display: none;
+}
+
+.header--fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 5px 15px 40px rgba(30, 35, 66, 0.15);
 }
 
 .nav {
@@ -784,6 +794,10 @@ i {
   }
   .header__btn {
     margin: 30px auto 0;
+  }
+
+  .header--fixed {
+    position: fixed;
   }
 
   .nav {
